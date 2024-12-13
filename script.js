@@ -1,3 +1,4 @@
+//part 1
 class ProductProperties {
     // Constructor method
     constructor(name, price, quantity) {
@@ -15,5 +16,12 @@ class ProductProperties {
 
         product.getTotalValue();
 
+        //part 2
+class PerishableProductProperties extends ProductProperties {
+    //constructor
+    constructor(name, price, quantity, expirationDate) {
+        super(name, price, quantity);
+        this.expirationDate = expirationDate; 
+    };
 
-
+    
