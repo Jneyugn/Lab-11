@@ -26,4 +26,11 @@ class PerishableProductProperties extends ProductProperties {
         toString() {
             return `Product: ${this.name}, Price: $${this.price.toFixed(2)}, Quantity: ${this.quantity}, Expiration Date: ${this.expirationDate}`;
         }
+
     }
+
+    const apple = new PerishableProductProperties('Apple', 2.50, 50, '2024-12-15');
+    const milk = new PerishableProductProperties('Milk', 1.50, 10, '2024-12-31');
+
+    console.log(apple.toString());
+    console.log(milk.toString());
