@@ -11,6 +11,12 @@ class ProductProperties {
         const totalValue = this.price * this.quantity;
         console.log(`Product Name: ${this.name}, Quantity: ${this.quantity}, Total Value = $${totalValue}`);
     }
+    //static
+    static applyDiscount(products, discount) {
+        products.forEach(product => {
+            product.price -= product.price * discount;
+        });
+    }
         }
         const product = new ProductProperties('Apple', 2.50, 50);
 
@@ -28,7 +34,6 @@ class PerishableProductProperties extends ProductProperties {
         }
 
     }
-
     const apple = new PerishableProductProperties('Apple', 2.50, 50, '2024-12-15');
     const milk = new PerishableProductProperties('Milk', 1.50, 10, '2024-12-31');
 
