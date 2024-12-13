@@ -5,12 +5,15 @@ class ProductProperties {
         this.price = price;
         this.quantity = quantity;
     }
-
     // Method to display total value
     getTotalValue() {
-        price*quantity;
-        console.log(`Price: ${this.price}, Quantity: ${this.quantity} Price = ${getTotalValue}`);
-            }
-
+        const totalValue = this.price * this.quantity;
+        console.log(`Product Name: ${this.name}, Quantity: ${this.quantity}, Total Value = $${totalValue}`);
+    }
         }
-        ProductProperties.getTotalValue();
+        const product = new ProductProperties('Apple', 2.50, 50);
+
+        product.getTotalValue();
+
+
+
