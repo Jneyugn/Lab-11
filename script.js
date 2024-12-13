@@ -8,7 +8,8 @@ class ProductProperties {
 
     // Method to display total value
     getTotalValue() {
+        price*quantity;
+        console.log(`Price: ${this.price}, Quantity: ${this.quantity} Price = ${getTotalValue}`);
+            }
 
-        console.log(`Price: ${this.price}, Quantity: ${this.quantity} Price = ${price*quantity}`);
-    }
-}
+        }
