@@ -1,6 +1,6 @@
 class ProductProperties {
     // Constructor method
-    constructor(name, age) {
+    constructor(name, price, quantity) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
@@ -13,3 +13,4 @@ class ProductProperties {
             }
 
         }
+        ProductProperties.getTotalValue();
