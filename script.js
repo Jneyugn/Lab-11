@@ -39,3 +39,13 @@ class PerishableProductProperties extends ProductProperties {
 
     console.log(apple.toString());
     console.log(milk.toString());
+
+    console.log("\nBefore Discount:");
+    console.log(apple.toString());
+    console.log(milk.toString());
+
+    ProductProperties.applyDiscount([apple, milk], 0.5);
+
+    console.log("\nAfter Discount:");
+console.log(apple.toString());
+console.log(milk.toString());
