@@ -32,20 +32,8 @@ class PerishableProductProperties extends ProductProperties {
         toString() {
             return `Product: ${this.name}, Price: $${this.price.toFixed(2)}, Quantity: ${this.quantity}, Expiration Date: ${this.expirationDate}`;
         }
-
     }
-    const apple = new PerishableProductProperties('Apple', 2.50, 50, '2024-12-15');
-    const milk = new PerishableProductProperties('Milk', 1.50, 10, '2024-12-31');
-
-    console.log(apple.toString());
-    console.log(milk.toString());
-
-    console.log("\nBefore Discount:");
-    console.log(apple.toString());
-    console.log(milk.toString());
-
-    ProductProperties.applyDiscount([apple, milk], 0.5);
-
-    console.log("\nAfter Discount:");
-console.log(apple.toString());
-console.log(milk.toString());
+    class Store {
+        constructor() {
+            this.inventory = []; 
+        }
